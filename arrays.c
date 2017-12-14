@@ -1,9 +1,8 @@
 /* ******************************************************************* *\
  *  Copyright ©2017 Mattia D'ambrosio                                  *
  *  ALL RIGHTS RESERVED!                                               *
- *  Note: this library can only be used for educational purposes!      *
  *                                                                     *
- *  Version: 2.3 (20171213)                                            *
+ *  Version: 2.3.0.1 (20171214)                                        *
 \* ******************************************************************* */
 
 #include "arrays.h"
