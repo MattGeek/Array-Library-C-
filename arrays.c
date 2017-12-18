@@ -2,7 +2,7 @@
  *  Copyright ©2017 Mattia D'ambrosio                                  *
  *  ALL RIGHTS RESERVED!                                               *
  *                                                                     *
- *  Version: 2.3.0.1 (20171214)                                        *
+ *  Version: 2.3.0.3 (20171217)                                        *
 \* ******************************************************************* */
 
 #include "arrays.h"
@@ -70,6 +70,26 @@ void resetArray1D(int vet[], int size){
     int i;
     for(i=0;i<size;i++)
         vet[i]=0;
+}
+
+/** \brief Unisce due vettori
+ *
+ * \param vetI1[] Primo vettore da unire (passato per indirizzo)
+ * \param sizeI1 Dimensione del primo vettore da unire (passato per valore)
+ * \param vetI2[] Secondo vettore da unire (passato per indirizzo)
+ * \param sizeI1 Dimensione del secondo vettore da unire (passato per valore)
+ * \param vetO[] Vettore che conterrà l'unione dei due vettori
+ *
+ * \return N/A E' una procedura
+ **/
+void merge2Arrays1D(int vetI1[], int sizeI1, int vetI2[], int sizeI2, int vetO[]){
+    int i, j;
+    for (i=0; i<sizeI1; i++)
+        vetO[i]=vetI1[i];
+    for (j=0; j<sizeI2; j++){
+        vetO[i]=vetI2[j];
+        i++;
+    }
 }
 
 /** \brief Ordinamento crescente di un'array sfruttando l'algoritmo: Insertion Sort
