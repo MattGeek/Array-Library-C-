@@ -2,7 +2,7 @@
  *  Copyright ©2017 Mattia D'ambrosio                                  *
  *  ALL RIGHTS RESERVED!                                               *
  *                                                                     *
- *  Version: 2.3.0.1 (20171214)                                        *
+ *  Version: 2.3.0.3 (20171217)                                        *
 \* ******************************************************************* */
 
 
@@ -17,6 +17,9 @@ void printArray1D(int *, int);
 
 ///Inizializzazione array
 void resetArray1D(int *, int);
+
+///Unisce due array
+void merge2Arrays1D(int *, int, int *, int, int *);
 
 ///Ordinamento array crescente Insertion Sort
 void ascendingInsertionSort(int *, int);
